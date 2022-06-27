@@ -134,6 +134,7 @@ body,
     align-items: center;
     justify-content: flex-end;
     text-align: center;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
@@ -160,8 +161,20 @@ body,
     margin-left: 5%;
 }
 .featured-blog-category{
-    width: 10%;
+    cursor: pointer;
+    width: 14%;
     margin-left: 5%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #4DCA59;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.featured-blog-category:hover{
+    transition: 0.5s;
+    background-color: #46b150;
 }
 
 .featured-blog-details{
@@ -174,7 +187,7 @@ body,
 .trending-blogs{
     display: flex;
     flex-direction: row;
-    height: 30vh;
+    height: 40vh;
     align-content: center;
     justify-content: space-around;
 }
@@ -197,6 +210,7 @@ body,
 }
 
 .trending-blog-title{
+    margin-top: 5%;
     text-align: center;
     font-family: $subtitlefont;
     font-weight: 400;
@@ -209,7 +223,69 @@ body,
     transition: 0.3s;
 }
 
+
 .trending-blog-metadata{
     display: flex;
+    margin-top: 5%;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: $subtitlefont;
+}
+
+.trending-blog-author{
+    font-size: 14px;
+    color: #808080;
+}
+
+.trending-blog-category{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #4DCA59;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.trending-blog-category:hover {
+    transition: 0.5s;
+    background-color: #46b150;
+}
+
+//Subscriber Card
+.subscribecard{
+    height: 20vh;
+    background-color: #DEFFE1;
+    border: 1px solid #43FF56;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe-site-title{
+    display: flex;
+    font-family: $titlefont;
+    font-size: 35px;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+}
+
+.subscribe-message{
+    display: flex;
+    font-family: $subtitlefont;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+}
+
+.subscribe-button{
+    display: flex;
+    font-family: $subtitlefont;
+    height: 100%;
+    width: 20%;
+    align-items: center;
 }
