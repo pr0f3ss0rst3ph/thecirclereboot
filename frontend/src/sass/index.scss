@@ -11,9 +11,12 @@ monospace;
 $subtitlefont: 'IBM Plex Mono',
 monospace;
 
-$sitetitle: 60px;
-$title: 30px;
-$trendingtitle: 20px;
+//Font Sizes
+$mainsitetitle: 70px;
+$title1: 30px;
+$title2: 20px;
+$siteinfotext: 18px;
+$secondarytext: 15px;
 
 html,
 body,
@@ -50,7 +53,7 @@ body,
 
 .site-title {
     font-family: $titlefont;
-    font-size: 70px;
+    font-size: $mainsitetitle;
     text-transform: uppercase;
 }
 
@@ -79,7 +82,9 @@ body,
     padding: 10px;
     height: 10vh;
     display: flex;
+    font-size: $siteinfotext;
     justify-content: center;
+    align-items: center;
 }
 
 //Feature card
@@ -120,7 +125,7 @@ body,
 
 .featured-blog-title {
     font-weight: 500;
-    font-size: 30px;
+    font-size: $title1;
     margin-right: 8%;
     cursor: pointer;
 }
@@ -182,7 +187,8 @@ body,
 
 .featured-blog-details{
     margin-right: 8%;
-    line-height: 2em;
+    line-height: 2.5em;
+    font-size: $secondarytext;
 }
 
 //Trending card
@@ -217,7 +223,7 @@ body,
     text-align: center;
     font-family: $subtitlefont;
     font-weight: 400;
-    font-size: 20px;
+    font-size: $title2;
     cursor: pointer;
 }
 
